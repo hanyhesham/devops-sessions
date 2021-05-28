@@ -4,6 +4,9 @@ pipeline {
         PROJECT_ID = 'bubbly-display-313214'
         CLUSTER_NAME = 'k8s-dev'
         LOCATION = 'us-central1-a'
+        CREDENTIALS_ID = 'gke'
+    }
+    stages {
         stage("Checkout code") {
             steps {
                 checkout scm
